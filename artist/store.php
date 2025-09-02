@@ -1,7 +1,7 @@
 <?php
 require('../includes/config.php');
 // print_r($_FILES);
-
+// yis galing
 $name = trim($_POST['artistName']);
 $country = trim($_POST['country']);
 print "<h1>$name</h1>";
