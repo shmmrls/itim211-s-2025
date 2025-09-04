@@ -15,7 +15,7 @@ if (isset($_FILES['image'])) {
 
         $source = $_FILES['image']['tmp_name'];
         $filename = basename($_FILES['image']['name']);
-        $filename = preg_replace("/[^a-zA-Z0-9\._-]/", "_", $filename); // clean name
+        //$filename = preg_replace("/[^a-zA-Z0-9\._-]/", "_", $filename); 
         $ext = strtolower(pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION));
         $target = "../upload/" . uniqid() . "." . $ext;
        
