@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <?php
-// session_start();
+session_start();
 // print_r($_SESSION);
 ?>
 <body>
@@ -24,19 +24,19 @@
                     <div class="navbar-nav">
                         <a href="#" class="nav-item nav-link active">Home</a>
                         <a href="#" class="nav-item nav-link">Profile</a>
-                        <a href="/itim211-s-2024/artist/index.php" class="nav-item nav-link">Artists</a>
-                        <a href="/itim211-s-2024/album/index.php" class="nav-item nav-link " tabindex="-1">Albums</a>
-                        <a href="/itim211-s-2024/listener/albumlist.php" class="nav-item nav-link " tabindex="-1">my Albums</a>
+                        <a href="/itim211-s-2025/artist/create.php" class="nav-item nav-link">Artists</a>
+                        <a href="/itim211-s-2025/album/create.php" class="nav-item nav-link " tabindex="-1">Albums</a>
+                        <a href="/itim211-s-2025/listener/albumlist.php" class="nav-item nav-link " tabindex="-1">my Albums</a>
                     </div>
                     <?php
                    
                     if (!isset($_SESSION['user_id'])) {
                         echo "<div class='navbar-nav ms-auto'>
-                        <a href='http://{$_SERVER['SERVER_NAME']}/itim211-s-2024/user/login.php'  class='nav-item nav-link'>Login</a></div>";
+                        <a href='http://{$_SERVER['SERVER_NAME']}/itim211-s-2025/user/login.php'  class='nav-item nav-link'>Login</a></div>";
                     } else {
                         echo "<div class='navbar-nav ms-auto'><p>{$_SESSION['email']}</p></div>";
                         echo "<div class='navbar-nav ms-auto'>
-                        <a href='http://{$_SERVER['SERVER_NAME']}/itim211-s-2024/user/logout.php'  class='nav-item nav-link'>Logout</a></div>";
+                        <a href='http://{$_SERVER['SERVER_NAME']}/itim211-s-2025/user/logout.php'  class='nav-item nav-link'>Logout</a></div>";
                     }
                     ?>
                 </div>

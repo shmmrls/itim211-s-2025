@@ -1,6 +1,6 @@
 <?php
 // print $_GET['id'];
-session_start();
+// session_start();
 include('../includes/header.php');
 require('../includes/config.php');
 // 
