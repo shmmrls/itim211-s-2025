@@ -31,15 +31,13 @@ include "../includes/config.php";
             echo "<td>{$row['genre']}</td>";
             echo "<td>{$row['date_released']}</td>";
             echo "<td>
-                    <a href=edit.php?id={$row['album_id']}>
-                        <i class='fa-regular fa-pen-to-square' aria-hidden='true' style='font-size:24px'>
-                        </i>
-                    </a>
-                    <a href=delete.php?id={$row['album_id']}>
-                        <i class='fa-regular fa-trash-can' aria-hidden='true' style='font-size:24px; color:red'>
-                        </i>
-                    </a>
-                </td>";
+        <a href='edit.php?id={$row['album_id']}' class='btn btn-sm btn-outline-primary' title='Edit'>
+            <i class='fa-regular fa-pen-to-square' aria-hidden='true'></i>
+        </a>
+        <a href='delete.php?id={$row['album_id']}' class='btn btn-sm btn-outline-danger' title='Delete' onclick=\"return confirm('Are you sure you want to delete this album?');\">
+            <i class='fa-regular fa-trash-can' aria-hidden='true'></i>
+        </a>
+      </td>";
             print "</tr>";
         }
 
