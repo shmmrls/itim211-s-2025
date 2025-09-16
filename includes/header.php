@@ -23,9 +23,9 @@ session_start();
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav">
                         <a href="#" class="nav-item nav-link active">Home</a>
-                        <a href="#" class="nav-item nav-link">Profile</a>
+                        <a href="/itim211-s-2025/user/profile.php" class="nav-item nav-link">Profile</a>
                         <a href="/itim211-s-2025/artist/create.php" class="nav-item nav-link">Artists</a>
-                        <a href="/itim211-s-2025/album/create.php" class="nav-item nav-link " tabindex="-1">Albums</a>
+                        <a href="/itim211-s-2025/album/index.php" class="nav-item nav-link " tabindex="-1">Albums</a>
                         <a href="/itim211-s-2025/listener/albumlist.php" class="nav-item nav-link " tabindex="-1">my Albums</a>
                     </div>
                     <?php

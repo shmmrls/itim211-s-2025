@@ -25,7 +25,7 @@ require("../includes/config.php");
 
             $result = mysqli_query($conn, $sql);
             while ($row = mysqli_fetch_assoc($result)) {
-                // var_dump($row);
+                 var_dump($row);
                 echo "<tr>
                         <td>{$row['artist_id']}</td>
                         <td>{$row['name']}</td>

@@ -6,7 +6,7 @@ include "../includes/config.php";
 
 ?>
 <div class="container-fluid container-lg">
-    <a class="btn btn-primary" href="create.php" role="button">Add Artist</a>
+    <a class="btn btn-primary" href="create.php" role="button">Add Album</a>
     <table class="table table-striped">
         <thead>
             <tr>
