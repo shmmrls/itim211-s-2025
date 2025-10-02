@@ -28,7 +28,7 @@
             <input type="date" class="form-control" id="dateReleased" name="dateReleased">
         </div>
         <div class="mb-3">
-            <label for="genre" class="form-label">genre</label>
+            <label for="genre" class="form-label">Genre</label>
             <input type="text" class="form-control" id="genre" name="genre">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>

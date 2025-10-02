@@ -7,19 +7,24 @@ require("../includes/config.php");
 ?>
 
 <body>
-    <a class="btn btn-primary" href="create.php" role="button">Add Artist</a>
-    <h1>artists</h1>
-    <table class='table table-striped'>
-        <thead>
-            <tr>
-                <th>artist ID</th>
-                <th>artist name </th>
-                <th>Country</th>
-                <th>Image</th>
-                <th>Action</th>
+    <div class="container-fluid container-lg">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <h3 class="mb-0">Artists</h3>
+            <a class="btn btn-primary" href="create.php" role="button">Add Artist</a>
+        </div>
 
-            </tr>
-        </thead>
+        <table class='table table-striped'>
+            <thead>
+                <tr>
+                    <th>Artist ID</th>
+                    <th>Artist Name</th>
+                    <th>Country</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+        
         <tbody>
             <?php
             $sql = "SELECT * FROM artists ORDER BY artist_id DESC";
@@ -45,6 +50,7 @@ require("../includes/config.php");
             ?>
         </tbody>
     </table>
+    </div>
 </body>
 <?php
 include('../includes/footer.php');
